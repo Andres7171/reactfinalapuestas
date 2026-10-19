@@ -12,4 +12,15 @@ export default class ServiceJugadores{
             throw error
         }
     }
+
+    async findJugadores(nombre){
+        let url=Global.url
+        let request='api/jugadores/findjugadores/'+nombre
+        try{
+            let response=await axios.get(url+request)
+            return response.data
+        }catch(error){
+            throw error
+        }
+    }
 }

@@ -78,6 +78,11 @@ export default class MenuComponent extends Component {
                     Apuestas
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/buscador">
+                    Buscador
+                  </NavLink>
+                </li>
 
                 <li className="nav-item dropdown">
                   <a
